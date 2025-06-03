@@ -1,0 +1,231 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    h2 {
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.125rem;
+      text-align: center;
+      margin: 2rem 0 1.5rem 0;
+    }
+    body > div:first-child {
+      background-color: #2f2f2f;
+      padding: 2rem 1rem 2.5rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-method {
+      background-color: #3f3f3f;
+      color: #fff;
+      font-size: 0.625rem;
+      padding: 0.75rem 1rem;
+      border-radius: 0.25rem;
+      width: 8.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+      box-sizing: border-box;
+      cursor: default;
+      user-select: none;
+    }
+
+    .contact-method:nth-child(1),
+    .contact-method:nth-child(3) {
+      border: 1px solid transparent;
+      position: relative;
+    }
+    .contact-method:nth-child(1)::before,
+    .contact-method:nth-child(3)::before {
+      content: "";
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1.25rem;
+      height: 1.25rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    .contact-method:nth-child(1)::before {
+      background-image: url("data:image/svg+xml,%3csvg fill='%238ca22f' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath d='M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21.5 2.5 13.93 2.5 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z'/%3e%3c/svg%3e");
+    }
+
+    .contact-method:nth-child(3)::before {
+      background-image: url("data:image/svg+xml,%3csvg fill='%238ca22f' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z'/%3e%3c/svg%3e");
+    }
+
+    .contact-method:nth-child(2) {
+      background-color: #6a7a1a;
+      color: #fff;
+      position: relative;
+      border: 1px solid transparent;
+    }
+    .contact-method:nth-child(2)::before {
+      content: "";
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1.25rem;
+      height: 1.25rem;
+      background-image: url("data:image/svg+xml,%3csvg fill='%23fff' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath d='M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z'/%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    .contact-method strong {
+      margin-left: 1.5rem;
+      font-weight: 600;
+      font-size: 0.75rem;
+      color: #fff;
+      display: block;
+      margin-bottom: 0.15rem;
+      position: relative;
+      left: 0.75rem;
+    }
+    .contact-method br {
+      display: none;
+    }
+    .contact-method {
+      padding-left: 2.5rem;
+    }
+
+    hr {
+      max-width: 900px;
+      margin: 2rem auto 2.5rem auto;
+      border: none;
+      border-top: 1px solid #ddd;
+    }
+    .form-heading {
+      max-width: 600px;
+      margin: 0 auto 1rem auto;
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: center;
+      color: #222;
+      line-height: 1.2;
+    }
+    .form-heading br {
+      display: none;
+    }
+    .form-heading::after {
+      content: "Let's get in touch!";
+      display: block;
+      color: #8ca22f;
+      font-weight: 600;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto 3rem auto;
+      background: #fff;
+      box-shadow: 0 0 10px rgb(0 0 0 / 0.05);
+      border-radius: 0.5rem;
+      padding: 1.5rem 1.5rem 2rem 1.5rem;
+      box-sizing: border-box;
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    label {
+      display: block;
+      font-size: 0.625rem;
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 0.25rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      font-size: 0.75rem;
+      color: #999;
+      border: 1px solid #eee;
+      border-radius: 0.25rem;
+      padding: 0.5rem 0.75rem;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      resize: none;
+      transition: box-shadow 0.2s ease;
+    }
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    textarea::placeholder {
+      color: #ccc;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      outline: none;
+      box-shadow: 0 0 6px #145214;
+      border-color: #145214;
+      color: #555;
+    }
+
+    textarea {
+      min-height: 6rem;
+    }
+
+    .submit-btn {
+      background-color: #145214;
+      color: #fff;
+      font-size: 0.75rem; 
+      font-weight: 600;
+      border: none;
+      padding: 0.5rem 1.25rem;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .submit-btn:hover,
+    .submit-btn:focus {
+      background-color: #0f3f0f;
+      outline: none;
+    }
+
+    @media (min-width: 640px) {
+      body > div:first-child {
+        gap: 1.5rem;
+      }
+      .contact-method {
+        width: 10rem;
+        font-size: 0.75rem;
+      }
+      .contact-method strong {
+        font-size: 0.875rem;
+      }
+      .form-heading {
+        font-size: 1.125rem;
+      }
+      .form-heading::after {
+        font-size: 1rem;
+      }
+      label {
+        font-size: 0.75rem;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        font-size: 0.875rem;
+      }
+      .submit-btn {
+        font-size: 0.875rem;
+        padding: 0.5rem 1.5rem;
+      }
+    }
